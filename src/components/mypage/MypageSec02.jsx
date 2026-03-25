@@ -1,7 +1,7 @@
 import React from 'react'
 import Goal from './Goal'
 import Climbed from './Climbed'
-import '../../css/MypageSec02.css'
+import '../../css/mypagesec02.css'
 
 export default function MypageSec02() {
   return (
