@@ -1,0 +1,176 @@
+/* ------------------------------------- Album ------------------------------------- */
+.album-wrap {
+    width: 100%;
+    padding: 50px 40px 40px;
+}
+
+.album-head {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.album-title {
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #2f2f2f;
+    line-height: 1.2;
+}
+
+.album-text {
+    margin: 0 0 18px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8a8a8a;
+    line-height: 1.5;
+}
+
+.album-btn {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2e8b57;
+    cursor: pointer;
+}
+
+.album-btn:hover {
+    opacity: 0.6;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.album-grid img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* ------------------------------------- Like ------------------------------------- */
+.like-wrap {
+    width: 100%;
+    padding: 34px 40px 40px;
+    box-sizing: border-box;
+}
+
+.like-head {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.like-title {
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #2f2f2f;
+    line-height: 1.2;
+}
+
+.like-text {
+    margin: 0 0 18px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8a8a8a;
+    line-height: 1.5;
+}
+
+.like-btn {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2e8b57;
+    cursor: pointer;
+}
+
+.like-btn:hover {
+    opacity: 0.6;
+}
+
+.like-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.like-grid .like-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.like-card .like-img{
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.like-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.like-card .text-area {
+    height: 100%;
+    text-align: left;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-area .text-top .title{
+    color: rgba(0, 0, 0, .75);
+}
+
+.text-area .text-top .date {
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.like-card .text-area .text-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-bot .expression {
+    display: flex;
+    gap: 20px;
+    color: rgba(0, 0, 0, .75);
+}
+
+.expression .expression img {
+    width: 18px;
+    height: 18px;
+}
+
+.expression .like-count,
+.expression .comment-count{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.text-bot .more {
+    background: rgba(99, 66, 48, 0.9);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

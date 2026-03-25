@@ -1,0 +1,14 @@
+.mypage {
+    background: #FFF8EE;
+}
+.mypage .contents {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    gap: 25px;
+    padding: 27px;
+}
+.mypage .contents > div {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

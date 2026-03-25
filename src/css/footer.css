@@ -1,0 +1,287 @@
+/* footer */
+footer {
+    background-image: url('/img/footer/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 55px 38px;
+    color: #F3E9DC;
+    font-weight: 200;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 9px;
+    border-bottom: 0.5px solid #fff;
+    gap: 20px;
+}
+
+footer .top .footer-logo img {
+    display: block;
+    width: 140px;
+    max-width: 100%;
+}
+
+footer .top .address {
+    font-size: 15px;
+}
+
+footer .bot {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 33px;
+}
+
+footer .bot .bot-left {
+    min-width: 0;
+}
+
+footer .bot .bot-left .info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 32px;
+}
+
+footer .bot .bot-left .info li {
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+footer .bot .bot-left .policy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+footer .bot .bot-left .policy li {
+    cursor: pointer;
+    font-size: 14px;
+    word-break: keep-all;
+}
+
+footer .bot .bot-right {
+    flex-shrink: 0;
+}
+
+footer .bot .bot-right .sns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 33px;
+    margin-bottom: 23px;
+}
+
+footer .bot .bot-right .sns li {
+    cursor: pointer;
+}
+
+footer .bot .bot-right .sns img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+footer .bot .bot-right .copy {
+    font-size: 13px;
+    text-align: right;
+    word-break: keep-all;
+}
+
+
+/* 1024px 이하 ~ 769px : 태블릿 가로 */
+@media (max-width: 1024px) {
+    footer {
+        padding: 36px 28px;
+        font-size: 15px;
+    }
+
+    footer .top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-bottom: 15px;
+    }
+
+    footer .top .footer-logo img {
+        width: 120px;
+    }
+
+    footer .top .address {
+        font-size: 14px;
+    }
+
+    footer .bot {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 15px;
+    }
+
+    footer .bot .bot-left .info {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer .bot .bot-left .info li,
+    footer .bot .bot-left .policy li {
+        font-size: 13px;
+    }
+
+    footer .bot .bot-left .policy {
+        gap: 20px;
+    }
+
+    footer .bot .bot-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    footer .bot .bot-right .sns {
+        margin-bottom: 0;
+        gap: 22px;
+        order: 2;
+    }
+
+    footer .bot .bot-right .sns img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .bot .bot-right .copy {
+        order: 1;
+        padding-top: 0;
+        text-align: left;
+        font-size: 12px;
+    }
+}
+
+
+/* 768px 이하 ~ 431px : 태블릿 세로 */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer .top {
+        gap: 6px;
+        padding-bottom: 12px;
+    }
+
+    footer .top .footer-logo img {
+        width: 105px;
+    }
+
+    footer .top .address {
+        font-size: 13px;
+    }
+
+    footer .bot {
+        gap: 18px;
+        padding-top: 12px;
+    }
+
+    footer .bot .bot-left .info {
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    footer .bot .bot-left .info li,
+    footer .bot .bot-left .policy li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    footer .bot .bot-left .policy {
+        gap: 14px;
+    }
+
+    footer .bot .bot-right {
+        gap: 14px;
+    }
+
+    footer .bot .bot-right .sns {
+        gap: 16px;
+    }
+
+    footer .bot .bot-right .sns img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer .bot .bot-right .copy {
+        font-size: 11px;
+    }
+}
+
+
+/* 430px 이하 : 모바일 */
+@media (max-width: 430px) {
+    footer {
+        padding: 24px 16px;
+    }
+
+    footer .top {
+        padding-bottom: 10px;
+    }
+
+    footer .top .footer-logo img {
+        width: 92px;
+    }
+
+    footer .top .address {
+        font-size: 12px;
+    }
+
+    footer .bot {
+        gap: 16px;
+        padding-top: 10px;
+    }
+
+    footer .bot .bot-left .info {
+        gap: 6px;
+        margin-bottom: 14px;
+    }
+
+    footer .bot .bot-left .info li,
+    footer .bot .bot-left .policy li {
+        font-size: 11px;
+    }
+
+    footer .bot .bot-left .policy {
+        gap: 10px;
+    }
+
+    footer .bot .bot-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 6px;
+    }
+
+    footer .bot .bot-right .copy {
+        order: 2;
+        font-size: 10px;
+        text-align: left;
+    }
+
+    footer .bot .bot-right .sns {
+        order: 1;
+        gap: 14px;
+    }
+
+    footer .bot .bot-right .sns img {
+        width: 18px;
+        height: 18px;
+    }
+}

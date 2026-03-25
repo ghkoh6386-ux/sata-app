@@ -1,0 +1,231 @@
+/* header */
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 5px;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    display: block;
+}
+
+nav {
+    margin-left: 50px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav>ul>li {
+    position: relative;
+    cursor: pointer;
+}
+
+nav a.active h3 {
+    color: #2E8B57;
+}
+
+li.active>h3 {
+    color: #2E8B57;
+}
+
+nav>ul>li h3 {
+    padding: 20px;
+    font-family: 'NanumGothicBold';
+    font-weight: 500;
+}
+
+nav>ul>li:hover .sub-menu {
+    display: block;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav>ul>li:hover .sub-menu li h4 {
+    transition: all 0.3s ease;
+}
+
+nav>ul>li:hover .sub-menu li h4:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 50%;
+    transform: translatex(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    width: 187px;
+    font-size: 20px;
+    padding-block: 25px;
+    display: none;
+}
+
+.sub-menu li {
+    line-height: 2.7;
+    font-weight: 500;
+}
+
+.sub-menu h4 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'NanumGothicBold';
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+nav ul li h3 {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 22px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NanumGothicBold';
+}
+
+.login a,
+button {
+    margin-left: 10px;
+}
+
+.login button {
+    font-size: 16px;
+    font-family: 'NanumGothicBold';
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.login .login::after {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    background: rgba(0, 0, 0, 0.75);
+    height: 13px;
+    margin-left: 10px;
+}
+
+.login .logout::before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    background: rgba(0, 0, 0, 0.75);
+    height: 13px;
+    margin-right: 10px;
+}
+
+.user img {
+    vertical-align: -15px;
+}
+
+.menu button {
+    vertical-align: -12px;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    header {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .menu-area button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+
+    nav,
+    .login {
+        display: none;
+    }
+
+    header .inner {
+        padding: 8px 30px;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: auto;
+        display: block;
+    }
+
+    .menu-area .menu {
+        width: 30px;
+        height: 30px;
+        stroke: #fff;
+        stroke-width: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    header .inner {
+        padding: 8px 20px;
+        min-height: 62px;
+    }
+
+    header .logo img {
+        width: 50px;
+    }
+
+    .menu-area .menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu-area button {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 430px) {
+    header .inner {
+        padding: 6px 16px;
+        min-height: 56px;
+    }
+
+    header .logo img {
+        width: 40px;
+    }
+
+    .menu-area .menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu-area button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* header */

@@ -1,0 +1,120 @@
+.faqpage-wrap {
+    overflow: hidden;
+}
+.faqpage-wrap .content {
+    position: relative;
+    padding-bottom: 400px;
+}
+
+.faqpage-wrap .title {
+    width: 100%;
+    padding-block: 120px;
+    text-align: center;
+    background: url(../assets/img/FAQ/cloud-faq.png) center / cover no-repeat;
+}
+
+.faqpage-wrap .title img {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.faqpage-wrap .title p {
+    font-size: 24px;
+}
+
+.faqpage-wrap button {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    border: none;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faqpage-wrap .faq-item {
+    overflow: visible;
+    position: relative;
+}
+
+.faqpage-wrap .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+    padding-inline: 10px;
+}
+
+.faqpage-wrap .faq-question .text {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    padding-block: 35px;
+}
+
+.faqpage-wrap .faq-question .text .q-badge {
+    background: #2E8B57;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 28px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqpage-wrap .faq-question .text h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.faqpage-wrap .faq-question .down {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.faqpage-wrap .faq-question .down.active {
+    transform: rotate(180deg);
+}
+
+.faqpage-wrap .faq-answer {
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    width: 100%;
+
+    background: #f0f0f0;
+    border-radius: 0 0 10px 10px;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.faqpage-wrap .faq-answer.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.faqpage-wrap .faq-answer p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #222;
+    word-break: keep-all;
+    padding: 30px 40px;
+}
+
+.faqpage-wrap .content .bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: -1;
+}

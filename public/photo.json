@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "설악산 권금성",
+    "desc": "핫플명소 권금성,설악 뷰 최고!",
+    "images": ["/img/hotspot/photo1.png"]
+  },
+    {
+    "id": 2,
+    "title": "관악산 마당바위",
+    "desc": "서울뷰 한눈에",
+    "images": ["/img/hotspot/photo2.png"]
+  },
+    {
+    "id": 3,
+    "title": "봄맞이 수리산",
+    "desc": "도심 힐링 산행",
+    "images": ["/img/hotspot/photo3.png"]
+  },
+    {
+    "id": 4,
+    "title": "무등산 서석대",
+    "desc": "무등산 구름뷰",
+    "images": ["/img/hotspot/photo4.png"]
+  },
+    {
+    "id": 5,
+    "title": "북한산 오리바위",
+    "desc": "오리바위에서 오리샷",
+    "images": ["/img/hotspot/photo5.png"]
+  },
+    {
+    "id": 6,
+    "title": "지리산 천왕봉",
+    "desc": "천왕봉 정복샷",
+    "images": ["/img/hotspot/photo6.png"]
+  },
+    {
+    "id": 7,
+    "title": "신림봉 바위",
+    "desc": "해발 820m의 포토존이란..",
+    "images": ["/img/hotspot/photo7.png"]
+  }
+]
