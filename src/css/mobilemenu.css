@@ -82,6 +82,7 @@
 .mobile-nav {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
 
 .mobile-nav-item {

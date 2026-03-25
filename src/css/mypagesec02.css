@@ -91,12 +91,10 @@
 .goal-dim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.62) 0%,
-    rgba(0, 0, 0, 0.18) 45%,
-    rgba(0, 0, 0, 0) 72%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.18) 45%,
+      rgba(0, 0, 0, 0) 72%);
 }
 
 .goal-info {
@@ -467,7 +465,7 @@
 
 @media (max-width: 430px) {
   .goal-wrap {
-    padding: 24px 14px 18px;
+    padding: 24px 14px 45px;
     border-radius: 18px;
   }
 
@@ -487,15 +485,21 @@
     margin-bottom: 12px;
   }
 
+  .climbed-text {
+    margin-bottom: 0px;
+  }
+
   .goal-btn,
   .climbed-btn {
     top: 2px;
     right: 0;
     font-size: 13px;
   }
+
   .climbed-btn {
     padding-right: 10px;
   }
+
   .goal-wrap .goal-grid {
     gap: 10px;
   }
