@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronDown, ChevronUp, X } from 'lucide-react'
 import '../css/mobilemenu.css'
-
+import { ChevronDown, X } from 'lucide-react'
 import mobileLogo from '../assets/img/header/logo.png'
-import mobileCharacter from '../assets/img/header/mobile-character.png'
+import mobileCharacter from '../assets/img/mobilemenu/leaf.png'
 
 export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
-  const [communityOpen, setCommunityOpen] = useState(false)
-  const [safeOpen, setSafeOpen] = useState(false)
+  const [openAccordion, setOpenAccordion] = useState(null)
 
   useEffect(() => {
     if (isOpen) {
@@ -24,17 +22,23 @@ export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
 
   useEffect(() => {
     if (!isOpen) {
-      setCommunityOpen(false)
-      setSafeOpen(false)
+      setOpenAccordion(null)
     }
   }, [isOpen])
+
+  const handleAccordionToggle = (menu) => {
+    setOpenAccordion((prev) => (prev === menu ? null : menu))
+  }
+
+  const isCommunityOpen = openAccordion === 'community'
+  const isSafeOpen = openAccordion === 'safe'
 
   return (
     <>
       <div
         className={`mobile-menu-dim ${isOpen ? 'show' : ''}`}
         onClick={onClose}
-      ></div>
+      />
 
       <aside className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <div className="mobile-menu-top">
@@ -77,18 +81,22 @@ export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
           <div className="mobile-nav-item has-sub">
             <button
               type="button"
-              className="mobile-nav-toggle"
-              onClick={() => setCommunityOpen(!communityOpen)}
+              className={`mobile-nav-toggle ${isCommunityOpen ? 'active' : ''}`}
+              onClick={() => handleAccordionToggle('community')}
+              aria-expanded={isCommunityOpen}
             >
               <span>커뮤니티</span>
-              {communityOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              <ChevronDown
+                className={`mobile-arrow ${isCommunityOpen ? 'open' : ''}`}
+                size={18}
+              />
             </button>
 
-            <div className={`mobile-sub-menu ${communityOpen ? 'open' : ''}`}>
-              <Link to="/community" onClick={onClose}>산타랑수다</Link>
+            <div className={`mobile-sub-menu ${isCommunityOpen ? 'open' : ''}`}>
+              <Link to="/community" onClick={onClose}>산타할사람</Link>
               <Link to="/community/review" onClick={onClose}>산타일기</Link>
-              <Link to="/community/team" onClick={onClose}>산타팀</Link>
-              <Link to="/community/lab" onClick={onClose}>등템연구소</Link>
+              <Link to="/community/team" onClick={onClose}>산꿀팁</Link>
+              <Link to="/community/lab" onClick={onClose}>등산템연구소</Link>
             </div>
           </div>
 
@@ -99,14 +107,18 @@ export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
           <div className="mobile-nav-item has-sub">
             <button
               type="button"
-              className="mobile-nav-toggle"
-              onClick={() => setSafeOpen(!safeOpen)}
+              className={`mobile-nav-toggle ${isSafeOpen ? 'active' : ''}`}
+              onClick={() => handleAccordionToggle('safe')}
+              aria-expanded={isSafeOpen}
             >
               <span>산타가 지켜줄게</span>
-              {safeOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+              <ChevronDown
+                className={`mobile-arrow ${isSafeOpen ? 'open' : ''}`}
+                size={18}
+              />
             </button>
 
-            <div className={`mobile-sub-menu ${safeOpen ? 'open' : ''}`}>
+            <div className={`mobile-sub-menu ${isSafeOpen ? 'open' : ''}`}>
               <Link to="/safe" onClick={onClose}>안전수칙</Link>
               <Link to="/faq" onClick={onClose}>FAQ</Link>
             </div>

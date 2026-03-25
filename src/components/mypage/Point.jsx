@@ -39,16 +39,16 @@ export default function Point() {
           <strong>산을 정복하고 포인트를 모아보세요!</strong>
           <div className="levels">
             <button className="level01">
-              <h4><span>1단계</span> 3곳 정복</h4>
+              <h4><span>1단계</span> 3곳 <br />정복</h4>
               <p>1,000P</p>
               <img src={images.etc.payStamp} alt="paystamp" />
             </button>
             <button className="level02">
-              <h4><span>2단계</span> 6곳 정복</h4>
+              <h4><span>2단계</span> 6곳 <br />정복</h4>
               <p>3,000P</p>
             </button>
             <button className="level03">
-              <h4><span>3단계</span> 10곳 정복</h4>
+              <h4><span>3단계</span> 10곳 <br />정복</h4>
               <p>12,000P</p>
             </button>
           </div>

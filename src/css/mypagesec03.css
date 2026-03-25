@@ -51,6 +51,8 @@
 .album-grid img {
     border-radius: 10px;
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ------------------------------------- Like ------------------------------------- */
@@ -110,18 +112,21 @@
     align-items: start;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 10px;
+    min-width: 0;
 }
 
 .like-card .like-img{
     border-radius: 10px 0 0 10px;
     overflow: hidden;
     height: 100%;
+    min-width: 0;
 }
 
 .like-img img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .like-card .text-area {
@@ -131,6 +136,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 0;
 }
 
 .text-area .text-top .title{
@@ -147,12 +153,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .text-bot .expression {
     display: flex;
     gap: 20px;
     color: rgba(0, 0, 0, .75);
+    flex-wrap: wrap;
 }
 
 .expression .expression img {
@@ -173,4 +181,152 @@
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* ========================= 반응형 ========================= */
+@media (max-width: 1024px) {
+    .album-wrap {
+        padding: 40px 28px 32px;
+    }
+
+    .like-wrap {
+        padding: 30px 28px 32px;
+    }
+
+    .album-title,
+    .like-title {
+        font-size: 26px;
+    }
+
+    .album-grid {
+        gap: 16px;
+    }
+
+    .like-grid {
+        gap: 14px;
+    }
+
+    .like-card .text-area {
+        padding: 14px;
+    }
+
+    .text-bot .more {
+        font-size: 15px;
+        padding: 9px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .album-wrap {
+        padding: 32px 20px 24px;
+    }
+
+    .like-wrap {
+        padding: 24px 20px 24px;
+    }
+
+    .album-title,
+    .like-title {
+        font-size: 24px;
+    }
+
+    .album-text,
+    .like-text {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .album-btn,
+    .like-btn {
+        font-size: 15px;
+    }
+
+    .album-grid {
+        gap: 12px;
+    }
+
+    .like-card .text-area {
+        padding: 12px;
+    }
+
+    .text-area .text-top .date {
+        font-size: 13px;
+    }
+
+    .text-bot .expression {
+        gap: 14px;
+    }
+
+    .text-bot .more {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 430px) {
+    .album-wrap {
+        padding: 24px 14px 18px;
+    }
+
+    .like-wrap {
+        padding: 18px 14px 18px;
+    }
+
+    .album-title,
+    .like-title {
+        font-size: 20px;
+    }
+
+    .album-text,
+    .like-text {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .album-btn,
+    .like-btn {
+        top: 2px;
+        font-size: 13px;
+    }
+
+    .album-grid {
+        gap: 8px;
+    }
+
+    .like-grid {
+        gap: 10px;
+    }
+
+    .like-grid .like-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .like-card .text-area {
+        padding: 10px;
+    }
+
+    .text-area .text-top .title {
+        font-size: 14px;
+    }
+
+    .text-area .text-top .date {
+        font-size: 12px;
+    }
+
+    .text-bot .expression {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .expression .like-count,
+    .expression .comment-count {
+        gap: 4px;
+    }
+
+    .text-bot .more {
+        font-size: 12px;
+        padding: 7px 10px;
+        border-radius: 8px;
+    }
 }

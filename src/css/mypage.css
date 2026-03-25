@@ -11,4 +11,32 @@
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    min-width: 0;
+}
+
+/* ========================= 반응형 ========================= */
+@media (max-width: 1024px) {
+    .mypage .contents {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mypage .contents {
+        gap: 16px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 430px) {
+    .mypage .contents {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .mypage .contents > div {
+        border-radius: 10px;
+    }
 }

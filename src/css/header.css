@@ -149,6 +149,14 @@ button {
         z-index: 10;
     }
 
+    body.mypage-body header {
+        position: static;
+    }
+
+    body.mypage-body .menu-area .menu {
+        stroke: #000;
+    }
+
     .menu-area button {
         display: inline-flex;
         align-items: center;
