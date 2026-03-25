@@ -187,7 +187,7 @@
 /* ========================= 반응형 ========================= */
 @media (max-width: 1024px) {
     .mypagesec03 {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .album-wrap {
         padding: 40px 28px 32px;
