@@ -1,438 +1,461 @@
 .search {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .searchpage-wrap {
-    position: relative;
+  position: relative;
 }
 
 /* ---------------- 검색박스 ---------------- */
 .search .search-box {
-    position: absolute;
-    left: 50%;
-    bottom: clamp(70px, 12vw, 200px);
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: clamp(70px, 12vw, 200px);
+  transform: translateX(-50%);
 
-    width: calc(100% - 32px);
-    max-width: 1200px;
-    min-height: 60px;
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  min-height: 60px;
 
-    border-radius: 999px;
-    background: #fff;
-    padding: 0 20px;
-    box-sizing: border-box;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 20;
+}
+
+.search .search-box input {
+  border: none;
+  width: 100%;
+}
+
+.search .search-box input:focus {
+  outline: none;
 }
 
 .search .search-box .searchText {
-    font-size: clamp(14px, 2vw, 18px);
-    color: rgba(0, 0, 0, 0.75);
-    word-break: keep-all;
+  font-size: clamp(14px, 2vw, 18px);
+  color: rgba(0, 0, 0, 0.75);
+  word-break: keep-all;
 }
 
 .search .search-box .search-logo {
-    width: clamp(22px, 3vw, 32px);
-    height: clamp(22px, 3vw, 32px);
-    flex-shrink: 0;
-    color: rgba(0, 0, 0, 0.75);
+  width: clamp(22px, 3vw, 32px);
+  height: clamp(22px, 3vw, 32px);
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 /* ---------------- 메인 비주얼 ---------------- */
 .searchpage-section {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    min-height: 1600px;
-    height: auto;
-    overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 1600px;
+  height: auto;
+  overflow: hidden;
 }
 
 .searchpage-section figure {
-    margin: 0;
+  margin: 0;
 }
 
 .searchpage-section figure img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .searchpage-section .text-area {
-    position: relative;
-    text-align: center;
-    padding-top: clamp(180px, 18vw, 180px);
-    z-index: 50;
-    font-size: clamp(20px, 2.3vw, 30px);
-    font-weight: 600;
-    line-height: 1.4;
-    word-break: keep-all;
-    padding-inline: 16px;
+  position: relative;
+  text-align: center;
+  padding-top: clamp(180px, 18vw, 180px);
+  z-index: 50;
+  font-size: clamp(20px, 2.3vw, 30px);
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: keep-all;
+  padding-inline: 16px;
 }
 
 .searchpage-section .cloud {
-    position: absolute;
-    width: 100%;
-    top: 0%;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  left: 0;
 }
 
 .searchpage-section .rabbit {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    width: 18vw;
-    max-width: 500px;
-    min-width: 30px;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 18vw;
+  max-width: 500px;
+  min-width: 30px;
 }
 
 .searchpage-section .map {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    max-width: 900px;
-    min-width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  max-width: 900px;
+  min-width: 280px;
 }
 
 .searchpage-section .bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .searchpage-section .bottom img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* ---------------- 지도 버튼 ---------------- */
 .searchpage-section button {
-    font-size: clamp(20px, 1.1vw, 28px);
-    font-weight: 600;
-    width: clamp(100px, 8vw, 125px);
-    min-height: 44px;
-    padding: 12px 35px;
+  font-size: clamp(20px, 1.1vw, 28px);
+  font-weight: 600;
+  width: clamp(100px, 8vw, 125px);
+  min-height: 44px;
+  padding: 12px 35px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    position: absolute;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
+  position: absolute;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
 
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    white-space: nowrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  white-space: nowrap;
 }
 
 .searchpage-section button:hover {
-    transform: translateY(-6px) scale(1.05);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 .searchpage-section .ganwon {
-    top: 18%;
-    right: 34%;
-    color: #E8AFC2;
+  top: 18%;
+  right: 34%;
+  color: #E8AFC2;
 }
 
 .searchpage-section .gyeonggi {
-    top: 28%;
-    left: 35%;
-    color: #cccccc;
+  top: 25%;
+  left: 35%;
+  color: #cccccc;
 }
 
 .searchpage-section .chungcheong {
-    top: 42%;
-    left: 40%;
-    color: #B2B09A;
+  top: 40%;
+  left: 36%;
+  color: #B2B09A;
 }
 
 .searchpage-section .jeolla {
-    top: 56%;
-    left: 37%;
-    color: #B4C9A6;
+  top: 56%;
+  left: 37%;
+  color: #B4C9A6;
 }
 
 .searchpage-section .gyeongsang {
-    top: 44%;
-    right: 25%;
-    color: #97BDC6;
+  top: 44%;
+  right: 25%;
+  color: #97BDC6;
 }
 
 .searchpage-section .jeju {
-    bottom: 8%;
-    left: 22%;
-    color: #E2B89C;
+  bottom: 8%;
+  left: 22%;
+  color: #E2B89C;
 }
 
 .searchpage-wrap .modal-map {
-    position: fixed;
-    z-index: 1000;
-    max-width: 750px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #2E8B57;
-    border-radius: 20px;
-    display: inline-block;
-    padding: 50px 30px;
-    background: url('/img/search/background-mountain-m.png') center / cover no-repeat;
+  position: fixed;
+  z-index: 1000;
+  max-width: 750px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #2E8B57;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 50px 30px;
+  background: url('/img/search/background-mountain-m.png') center / cover no-repeat;
 }
 
 .searchpage-wrap .modal-map .top {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 .searchpage-wrap .modal-map .top button {
-    position: absolute;
-    right: 0%;
-    cursor: pointer;
+  position: absolute;
+  right: 0%;
+  cursor: pointer;
 }
 
 .searchpage-wrap .modal-map .top .close {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 .searchpage-wrap .modal-map .mountain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.searchpage-wrap .modal-map .mountain figure {
+  flex: 1.7;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .searchpage-wrap .modal-map .mountain img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .searchpage-wrap .modal-map .mountain .text-area {
-    max-width: 400px;
-    text-align: left;
-    position: relative;
+  flex: 2;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
 }
 
 .searchpage-wrap .modal-map .mountain .text-area h3 {
-    font-size: 24px;
-    color: #422A2E;
-    margin-bottom: 2px;
+  font-size: 24px;
+  color: #422A2E;
+  margin-bottom: 2px;
 }
 
 .searchpage-wrap .modal-map .mountain .text-area span {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 600;
-    color: #2E8B57;
-    margin-bottom: 5px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2E8B57;
+  margin-bottom: 5px;
 }
 
 .searchpage-wrap .modal-map .mountain .text-area p {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .searchpage-wrap .modal-map .mountain .text-area .btn-area {
-    width: 100%;
-    height: 50px;
-    position: relative;
+  width: 100%;
+  height: 50px;
+  position: relative;
 }
 
 .searchpage-wrap .modal-map .mountain .text-area button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 156px;
-    height: 46px;
-    background: #2E8B57;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 156px;
+  height: 46px;
+  background: #2E8B57;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 .searchpage-wrap .modal-mountain-info {
-    position: fixed;
-    z-index: 1000;
-    max-width: 750px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    border: 2px solid #2E8B57;
-    display: inline-block;
-    padding: 50px 30px;
-    background: url('/img/search/background-course-m.png') center / cover no-repeat;
+  position: fixed;
+  z-index: 1000;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: 2px solid #2E8B57;
+  display: inline-block;
+  padding: 50px 30px;
+  background: url('/img/search/background-course-m.png') center / cover no-repeat;
 }
 
 .searchpage-wrap .modal-mountain-info .top {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal-mountain-info .top .close {
-    position: absolute;
-    cursor: pointer;
-    top: 5px;
-    right: 0;
-    width: 35px;
-    height: 35px;
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 0;
+  width: 35px;
+  height: 35px;
 }
 
 .modal-mountain-info .top .back-btn {
-    position: absolute;
-    cursor: pointer;
-    top: 5px;
-    left: 0;
-    width: 35px;
-    height: 35px;
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  left: 0;
+  width: 35px;
+  height: 35px;
 }
 
 .searchpage-wrap .modal-mountain-info figure {
-    position: relative;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .searchpage-wrap .modal-mountain-info figure .photo {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .searchpage-wrap .modal-mountain-info figure .distance {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: #dcdcdc;
-    padding: 12px 20px;
-    border-radius: 20px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #dcdcdc;
+  padding: 12px 20px;
+  border-radius: 20px;
 }
 
 .searchpage-wrap .modal-mountain-info figure .distance h4 {
-    font-size: 20px;
-    opacity: 0.9;
+  font-size: 20px;
+  opacity: 0.9;
 }
 
 .searchpage-wrap .modal-mountain-info .courses {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 25px 0 35px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 0 35px 0;
 }
 
 .searchpage-wrap .modal-mountain-info .course {
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .searchpage-wrap .modal-mountain-info .course .top {
-    background: #d9d9d9;
-    padding: 5px 60px;
-    border-radius: 10px 10px 0px 0px;
+  background: #d9d9d9;
+  padding: 5px 60px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .searchpage-wrap .modal-mountain-info .course h3 {
-    white-space: nowrap;
-    font-size: 24px;
-    color: #2E8B57;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #2E8B57;
 }
 
 .searchpage-wrap .modal-mountain-info .course p {
-    font-size: 18px;
-    display: inline-block;
-    font-weight: 400;
-    opacity: 0.9;
-    padding-block: 8px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 400;
+  opacity: 0.9;
+  padding-block: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .searchpage-wrap .modal-mountain-info .course span {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .searchpage-wrap .modal-mountain-info .course .distance {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-block: 3px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-block: 3px;
 }
 
 .searchpage-wrap .modal-mountain-info .course .time {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .searchpage-wrap .modal-mountain-info .course h4 {
-    background: #C62828;
-    opacity: 0.8;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 10px;
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 15px;
+  background: #D05252;
+  opacity: 0.8;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-.searchpage-wrap .modal-mountain-info .course h4 img {
-    vertical-align: -5px;
-    margin-right: 5px;
-    opacity: 1;
+.searchpage-wrap .modal-mountain-info .course h4.easy {
+  background: #2E8B57;
 }
 
-.searchpage-wrap .modal-mountain-info .course:nth-child(3) h4 {
-    background: #F4C430;
-    padding: 5px 15px;
+.searchpage-wrap .modal-mountain-info .course h4.medium {
+  background: #F4C430;
 }
 
 .searchpage-wrap .modal-mountain-info .btn-area {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .searchpage-wrap .modal-mountain-info .btn-area a {
-    padding: 10px 35px;
-    background: #2E8B57;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 20px;
+  padding: 10px 35px;
+  background: #2E8B57;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 .modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 /* =========================
@@ -797,7 +820,10 @@
   .searchpage-wrap .modal-mountain-info .course {
     width: 100%;
   }
-
+  .searchpage-wrap .modal-mountain-info .course .top {
+    display: flex;
+    justify-content: center;
+  }
   .searchpage-wrap .modal-mountain-info .course .top {
     padding: 8px 14px;
   }
@@ -807,20 +833,30 @@
   }
 
   .searchpage-wrap .modal-mountain-info .course p {
-    font-size: 14px;
+    font-size: 18px;
+    padding: 10 20px;
+    border: none;
+  }
+
+  .searchpage-wrap .course .info-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+  }
+
+  .searchpage-wrap .course .distance,
+  .searchpage-wrap .course .time, .searchpage-wrap .modal-mountain-info .course .info-row h4 {
+    display: flex;
+    font-size: clamp(5px, 2.5vw, 12px);
   }
 
   .searchpage-wrap .modal-mountain-info .course .distance,
   .searchpage-wrap .modal-mountain-info .course .time {
     font-size: 14px;
-    gap: 8px;
-  }
-
-  .searchpage-wrap .modal-mountain-info .course h4 {
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-top: 8px;
-    margin-bottom: 12px;
+    gap: 10px;
   }
 
   .searchpage-wrap .modal-mountain-info .btn-area a {
@@ -1034,18 +1070,31 @@
     padding-block: 7px;
   }
 
-  .searchpage-wrap .modal-mountain-info .course .distance,
-  .searchpage-wrap .modal-mountain-info .course .time {
-    font-size: 13px;
-    gap: 6px;
+  .searchpage-wrap .course .info-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 
-  .searchpage-wrap .modal-mountain-info .course h4 {
-    font-size: 13px;
-    padding: 4px 9px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+  .searchpage-wrap .modal-mountain-info .course p {
+    font-size: 18px;
+    padding: 10 20px;
+    border: none;
+  }
+
+  .searchpage-wrap .course .info-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+  }
+
+  .searchpage-wrap .course .distance,
+  .searchpage-wrap .course .time, .searchpage-wrap .modal-mountain-info .course .info-row:last-child {
+    display: flex;
+    font-size: clamp(4px, 1.5vw, 10px);
   }
 
   .searchpage-wrap .modal-mountain-info .course h4 img {

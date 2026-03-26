@@ -18,7 +18,7 @@ export default function HomePage() {
       />
       <div className="search">
         <Link to="/search" className="search-box">
-          <p className='searchText'>오르고 싶은 산을 검색해보세요</p>
+          <p className='searchText'>오르고 싶은 산을 찾아보세요</p>
           <Search className='search-logo'/>
         </Link>
       </div>

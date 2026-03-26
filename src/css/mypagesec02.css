@@ -255,7 +255,7 @@
 .climbed-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 132px));
-  gap: 20px 24px;
+  gap: 12px 15px;
   justify-content: center;
 }
 

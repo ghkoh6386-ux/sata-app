@@ -4,9 +4,19 @@ import '../css/mobilemenu.css'
 import { ChevronDown, X } from 'lucide-react'
 import mobileLogo from '../assets/img/header/logo.png'
 import mobileCharacter from '../assets/img/mobilemenu/leaf.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
   const [openAccordion, setOpenAccordion] = useState(null)
+  const navigate = useNavigate()
+  const handleMyPageClick = () => {
+  if (isLogin) {
+    navigate('/mypage')
+  } else {
+    navigate('/login')
+  }
+  onClose()
+}
 
   useEffect(() => {
     if (isOpen) {
@@ -71,7 +81,7 @@ export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
 
         <nav className="mobile-nav">
           <div className="mobile-nav-item">
-            <Link to="/mypage" onClick={onClose}>마이페이지</Link>
+            <button className='mypage' onClick={handleMyPageClick}>마이페이지</button>
           </div>
 
           <div className="mobile-nav-item">

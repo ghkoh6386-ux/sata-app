@@ -16,7 +16,7 @@ export default function PlacePage() {
 
   const scrollTo = (sectionRef) => {
     if (sectionRef && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 

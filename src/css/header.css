@@ -29,11 +29,35 @@ nav>ul>li {
 }
 
 nav a.active h3 {
+    position: relative;
     color: #2E8B57;
 }
 
+nav a.active h3::after {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    content: '';
+    background: #2E8B57;
+}
+
 li.active>h3 {
+    position: relative;
     color: #2E8B57;
+}
+
+li.active>h3::after {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    content: '';
+    background: #2E8B57;
 }
 
 nav>ul>li h3 {

@@ -14,7 +14,7 @@ export default function PlaceCardRest() {
                 setCafeList(data)
             })
     }, [])
-    console.log(cafeList)
+    //console.log(cafeList)
 
     return (
         <section id="rest">

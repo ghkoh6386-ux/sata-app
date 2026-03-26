@@ -90,6 +90,7 @@
 }
 
 .mobile-nav-item > a,
+.mobile-nav-item > button,
 .mobile-nav-toggle {
   width: 100%;
   min-height: 60px;
@@ -113,7 +114,8 @@
   text-align: left;
 }
 
-.mobile-nav-item > a {
+.mobile-nav-item > a,
+.mobile-nav-item > button {
   padding-left: 0;
 }
 
