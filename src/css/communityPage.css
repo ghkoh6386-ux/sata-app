@@ -1,5 +1,6 @@
 .communitypage-wrap .inner {
   width: 1440px;
+  max-width: calc(100% - 40px);
 }
 
 .communitypage-wrap .inner h2 {
@@ -12,6 +13,7 @@
   justify-content: center;
   gap: 20px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .category-button button {
@@ -25,6 +27,7 @@
   transition: all 0.3s ease;
   margin-left: 0;
   width: 120px !important;
+  height: 48px;
 }
 
 .category-button button.active {
@@ -117,7 +120,7 @@
   background: #2E8B57;
 }
 
-.communitypage-wrap .card>p {
+.communitypage-wrap .card > p {
   grid-column: 1 / 3;
   margin: 0 20px 10px;
   font-size: 14px;
@@ -229,7 +232,7 @@
   padding: 40px;
   border-radius: 16px;
   max-width: 450px;
-  max-width: 100%;
+  width: calc(100% - 40px);
   text-align: center;
 }
 
@@ -261,4 +264,337 @@
 
 .join-btn.joined {
   background: #2E8B57;
+}
+
+/* 모바일 슬라이더 기본 숨김 */
+.community-slider-wrap {
+  display: none;
+}
+
+.mobile-slide-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 56px;
+}
+
+.community-swiper {
+  overflow: visible;
+}
+
+.community-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.community-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d9d9d9;
+  opacity: 1;
+  margin: 0 6px !important;
+}
+
+.community-swiper .swiper-pagination-bullet-active {
+  background: #2E8B57;
+}
+
+/* =========================
+   1024px 이하
+========================= */
+@media (max-width: 1023px) {
+  .communitypage-wrap .inner {
+    width: 100%;
+    max-width: calc(100% - 40px);
+  }
+
+  .communitypage-wrap .inner h2 {
+    margin-top: 80px;
+  }
+
+  .communitypage-wrap .explain {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  .category-button {
+    gap: 14px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+  }
+
+  .category-button button {
+    width: 104px !important;
+    height: 44px;
+    font-size: 18px !important;
+    padding: 0 16px;
+  }
+
+  .communitypage-wrap .card-wrap {
+    display: none;
+  }
+
+  .community-slider-wrap {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 180px;
+  }
+
+  .communitypage-wrap .card {
+    width: 100%;
+  }
+
+  .communitypage-wrap .card-main-img {
+    height: 260px;
+  }
+
+  .communitypage-wrap .title-area {
+    margin: 16px 18px 8px;
+  }
+
+  .communitypage-wrap .title-area .feet-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .communitypage-wrap .title-area h3 {
+    font-size: 18px;
+  }
+
+  .communitypage-wrap .title-area .badge {
+    font-size: 13px;
+    padding: 4px 14px;
+  }
+
+  .communitypage-wrap .card > p {
+    margin: 0 18px 10px;
+    font-size: 14px;
+  }
+
+  .communitypage-wrap .info-area {
+    margin: 18px 18px 0 10px;
+  }
+
+  .communitypage-wrap .date {
+    margin: 0 18px 12px;
+  }
+
+  .communitypage-wrap .tags {
+    margin: 0 18px;
+  }
+
+  .communitypage-wrap .btn-area {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+
+  .communitypage-wrap button {
+    width: 150px;
+    height: 42px;
+    font-size: 17px;
+  }
+}
+
+/* =========================
+   768px 이하
+========================= */
+@media (max-width: 768px) {
+  .communitypage-wrap .inner {
+    max-width: calc(100% - 32px);
+  }
+
+  .communitypage-wrap .inner h2 {
+    margin-top: 70px;
+  }
+
+  .communitypage-wrap .explain {
+    margin-top: 88px;
+    font-size: 26px;
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+
+  .category-button {
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .category-button button {
+    width: 83px !important;
+    height: 40px;
+    font-size: 16px !important;
+    border-radius: 24px !important;
+  }
+
+  .community-slider-wrap {
+    margin-top: 32px;
+    margin-bottom: 150px;
+  }
+
+  .mobile-slide-group {
+    gap: 16px;
+    padding-bottom: 52px;
+  }
+
+  .communitypage-wrap .card-main-img {
+    height: 220px;
+  }
+
+  .communitypage-wrap .title-area .feet-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .communitypage-wrap .title-area h3 {
+    font-size: 17px;
+  }
+
+  .communitypage-wrap .title-area .badge {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-left: 10px;
+  }
+
+  .communitypage-wrap .card > p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .communitypage-wrap .info-area {
+    font-size: 11px;
+  }
+
+  .communitypage-wrap .date {
+    font-size: 11px;
+  }
+
+  .communitypage-wrap .tags span {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+
+  .communitypage-wrap .btn-area {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .communitypage-wrap button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   430px 이하
+========================= */
+@media (max-width: 430px) {
+  .communitypage-wrap .inner {
+    max-width: calc(100% - 24px);
+  }
+
+  .communitypage-wrap .inner h2 {
+    margin-top: 56px;
+  }
+
+  .communitypage-wrap .explain {
+    margin-top: 72px;
+    font-size: 22px;
+  }
+
+  .category-button {
+    gap: 8px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .category-button button {
+    width: 70px !important;
+    height: 36px;
+    font-size: 14px !important;
+    padding: 0 10px;
+  }
+
+  .community-slider-wrap {
+    margin-top: 24px;
+    margin-bottom: 120px;
+  }
+
+  .mobile-slide-group {
+    gap: 14px;
+    padding-bottom: 46px;
+  }
+
+  .communitypage-wrap .card {
+    border-radius: 14px;
+  }
+
+  .communitypage-wrap .card-main-img {
+    height: 190px;
+  }
+
+  .communitypage-wrap .title-area {
+    margin: 14px 14px 8px;
+  }
+
+  .communitypage-wrap .title-area .feet-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .communitypage-wrap .title-area h3 {
+    font-size: 16px;
+  }
+
+  .communitypage-wrap .title-area .badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    margin-left: 8px;
+  }
+
+  .communitypage-wrap .card > p {
+    margin: 0 14px 10px;
+    font-size: 12px;
+  }
+
+  .communitypage-wrap .info-area {
+    margin: 16px 14px 0 8px;
+    font-size: 10px;
+  }
+
+  .communitypage-wrap .date {
+    margin: 0 14px 10px;
+    font-size: 10px;
+  }
+
+  .communitypage-wrap .date span {
+    margin-left: 8px;
+    padding: 2px 4px;
+  }
+
+  .communitypage-wrap .tags {
+    margin: 0 14px;
+    gap: 6px;
+  }
+
+  .communitypage-wrap .tags span {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .communitypage-wrap .btn-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .communitypage-wrap button {
+    width: 128px;
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .community-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px !important;
+  }
 }

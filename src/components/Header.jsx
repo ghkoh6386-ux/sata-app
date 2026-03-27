@@ -1,4 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Nav from './Nav'
 import MobileMenu from './MobileMenu'
 import { Link, useNavigate } from 'react-router-dom'
@@ -12,6 +13,17 @@ export default function Header() {
   const { isLogin, logout } = useContext(AuthContext)
   const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleLogout = (e) => {
     e.preventDefault()
@@ -30,8 +42,8 @@ export default function Header() {
 
   return (
     <>
-      <header>
-        <div className="inner">
+      <header className={`${location.pathname === '/mypage' ? 'white' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="inner" >
           <Link className="logo" to="/">
             <img src={Logo} alt="logo" />
           </Link>

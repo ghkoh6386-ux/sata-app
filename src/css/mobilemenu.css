@@ -38,6 +38,7 @@
   display: flex;
   justify-content: flex-end;
   margin-bottom: 30px;
+  padding: 0 15px;
 }
 
 .mobile-close-btn {
@@ -117,6 +118,7 @@
 .mobile-nav-item > a,
 .mobile-nav-item > button {
   padding-left: 0;
+  font-size: 16px;
 }
 
 .mobile-nav-toggle {

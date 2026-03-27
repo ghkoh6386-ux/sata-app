@@ -1,5 +1,6 @@
 .mypage {
     background: #FFF8EE;
+    padding-top: 75px;
 }
 .mypage .contents {
     display: grid;

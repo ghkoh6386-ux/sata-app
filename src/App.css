@@ -88,8 +88,23 @@ button {
         background: rgba(0, 0, 0, 0.3);
     }
 
-    .hero-text h1 img {
-        height: min(100%, 30px);
+    .homepage .hero-text h1 img {
+        width: min(100%, 300px);
+    }
+    .searchpage-wrap .hero-text h1 img {
+        width: min(100%, 130px);
+    }
+    .communitypage-wrap .hero-text h1 img {
+        width: min(100%, 180px);
+    }
+    .placepage .hero-text h1 img {
+        width: min(100%, 230px);
+    }
+    .safepage .hero-text h1 img {
+        width: min(100%, 150px);
+    }
+    .faqpage-wrap .hero-text h1 img {
+        width: min(100%, 100px);
     }
 }
 
@@ -110,7 +125,22 @@ button {
         background: rgba(0, 0, 0, 0.35);
     }
 
-    .hero-text h1 img {
-        height: min(100%, 100px);
+    .homepage .hero-text h1 img {
+        width: min(100%, 300px);
+    }
+    .searchpage-wrap .hero-text h1 img {
+        width: min(100%, 100px);
+    }
+    .communitypage-wrap .hero-text h1 img {
+        width: min(100%, 130px);
+    }
+    .placepage .hero-text h1 img {
+        width: min(100%, 150px);
+    }
+    .safepage .hero-text h1 img {
+        width: min(100%, 110px);
+    }
+    .faqpage-wrap .hero-text h1 img {
+        width: min(100%, 70px);
     }
 }
