@@ -14,14 +14,15 @@ export default function PlaceCard() {
         setCafeList(data)
       })
   }, [])
-  //console.log(cafeList)
 
   return (
     <section id="cafe">
       <Swiper
-        pagination={{ dynamicBullets: true }}
+        pagination={{ clickable: true }}
         modules={[Pagination]}
         className="common-area"
+        slidesPerView={1}
+        spaceBetween={20}
       >
         {cafeList.map((cafe) => (
           <SwiperSlide key={cafe.id}>
@@ -33,11 +34,13 @@ export default function PlaceCard() {
                   </div>
                 ))}
               </div>
+
               <div className="common-text">
                 <div className="common-badges">
                   <span className="location">{cafe.location}</span>
                   <span className="badge">{cafe.badge}</span>
                 </div>
+
                 <div className="title-area">
                   <h3>{cafe.title}</h3>
                   <div>
@@ -45,8 +48,10 @@ export default function PlaceCard() {
                     <span>리뷰 {cafe.review}건</span>
                   </div>
                 </div>
+
                 <span className='time'>영업시간: {cafe.opentime} - {cafe.closetime}</span>
                 <p className='desc'>{cafe.desc}</p>
+
                 <div className="keywords">
                   {cafe.keyword.map((k, i) => (
                     <span key={i}>#{k}</span>

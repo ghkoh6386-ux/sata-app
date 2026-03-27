@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import courseBg from '../../assets/img/hotspot/background-course-m.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export default function PlaceCardPhoto() {
   const [photoList, setPhotoList] = useState([]);
@@ -24,9 +26,10 @@ export default function PlaceCardPhoto() {
   return (
     <>
       <section id="photo">
-        <div className="photo-area">
+        {/* PC: 1024px 초과 */}
+        <div className="photo-area photo-grid">
           {photoList.map((photoZone) => (
-            <div className="swiper-slide" key={photoZone.id}>
+            <div className="photo-grid-item" key={photoZone.id}>
               <div className="photo-slide" onClick={() => openModal(photoZone)}>
                 <img src={photoZone.images[0]} alt={photoZone.title} />
                 <div className="photo-text">
@@ -37,6 +40,47 @@ export default function PlaceCardPhoto() {
             </div>
           ))}
         </div>
+
+        {/* 1024px 이하 */}
+        <Swiper
+          slidesPerView={4.15}
+          spaceBetween={6}
+          slidesOffsetBefore={8}
+          slidesOffsetAfter={8}
+          className="photo-area photo-swiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 2,
+              spaceBetween: 1,
+              slidesOffsetBefore: 1,
+              slidesOffsetAfter: 1,
+            },
+            481: {
+              slidesPerView: 3.15,
+              spaceBetween: 6,
+              slidesOffsetBefore: 8,
+              slidesOffsetAfter: 8,
+            },
+            769: {
+              slidesPerView: 4.15,
+              spaceBetween: 15,
+              slidesOffsetBefore: 8,
+              slidesOffsetAfter: 8,
+            },
+          }}
+        >
+          {photoList.map((photoZone) => (
+            <SwiperSlide key={photoZone.id}>
+              <div className="photo-slide" onClick={() => openModal(photoZone)}>
+                <img src={photoZone.images[0]} alt={photoZone.title} />
+                <div className="photo-text">
+                  <span className="photo-loca">{photoZone.title}</span>
+                  <span className="photo-desc">{photoZone.desc}</span>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
 
       {selectedPhoto && (
