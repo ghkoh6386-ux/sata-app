@@ -1,6 +1,7 @@
 .faqpage-wrap {
     overflow: hidden;
 }
+
 .faqpage-wrap .content {
     position: relative;
     padding-bottom: 400px;
@@ -80,26 +81,16 @@
 }
 
 .faqpage-wrap .faq-answer {
-    position: absolute;
-    left: 10px;
-    top: 100%;
-    width: 100%;
-
-    background: #f0f0f0;
-    border-radius: 0 0 10px 10px;
-
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-
+    background: #f5f5f5;
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.3s ease;
-    z-index: 10;
+    opacity: 0;
 }
 
 .faqpage-wrap .faq-answer.open {
     opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+    max-height: 500px;
 }
 
 .faqpage-wrap .faq-answer p {

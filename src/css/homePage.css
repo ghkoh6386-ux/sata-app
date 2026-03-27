@@ -1,4 +1,4 @@
-.homepage {
+--------------------homePage.css--------------------------.homepage {
   position: relative;
   overflow-x: hidden;
 }
@@ -35,7 +35,6 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-
   font-size: 20px;
   border-radius: 10px;
   padding: 10px 20px;
@@ -43,7 +42,6 @@
   color: #fff;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(46, 139, 87, 0.25);
-
   display: flex;
   align-items: center;
   gap: 10px;
@@ -130,6 +128,15 @@
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section01 .card.expired-card {
+  opacity: 0.5;
+  filter: grayscale(0.5);
+}
+
+.section01 .card.expired-card:hover {
+  transform: none;
 }
 
 .section01 .card-main-img {

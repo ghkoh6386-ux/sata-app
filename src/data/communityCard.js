@@ -19,7 +19,7 @@ const communityCard = [{
     heart: 11,
     people: '18/20',
     desc: '숨 고르면서 가도 OK, 느긋등산 함께할 팀원 모집 중',
-    date: '2026.03.25',
+    date: '2026.04.14',
     dDay: 'D-31',
     tag1: '#등린이모여',
     tag2: '#당일치기',
