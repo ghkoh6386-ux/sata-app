@@ -206,7 +206,7 @@
     gap: 30px;
 }
 
-.mypagesec01 .point .stamp .levels > button {
+.mypagesec01 .point .stamp .levels>button {
     background: #fff;
     padding: 10px 15px;
     border-radius: 10px;
@@ -217,17 +217,19 @@
     max-width: 350px;
 }
 
-.mypagesec01 .point .stamp .levels > button span {
+.mypagesec01 .point .stamp .levels>button span {
     color: #C62828;
     display: inline-block;
     margin-bottom: 8px;
 }
-.mypagesec01 .point .stamp .levels > button h4 {
+
+.mypagesec01 .point .stamp .levels>button h4 {
     font-size: 14px;
     line-height: 0.8;
     margin-bottom: 5px;
 }
-.mypagesec01 .point .stamp .levels > button p {
+
+.mypagesec01 .point .stamp .levels>button p {
     font-weight: 500;
     font-size: 13px;
 }
@@ -285,7 +287,7 @@
         gap: 18px;
     }
 
-    .mypagesec01 .point .stamp .levels > button {
+    .mypagesec01 .point .stamp .levels>button {
         padding: 10px 12px;
         font-size: 16px;
     }
@@ -343,7 +345,7 @@
         gap: 10px;
     }
 
-    .mypagesec01 .point .stamp .levels > button {
+    .mypagesec01 .point .stamp .levels>button {
         padding: 9px 8px;
         font-size: 14px;
     }
@@ -382,6 +384,7 @@
     .mypagesec01 .distance {
         padding: 0 20px;
     }
+
     .mypagesec01 .distance img {
         max-width: 350px;
     }
@@ -424,12 +427,13 @@
         gap: 8px;
     }
 
-    .mypagesec01 .point .stamp .levels > button {
-        padding: 8px 6px;
-        font-size: 12px;
+    .mypagesec01 .point .stamp .levels>button {
+        padding: clamp(6px, 0.8vw, 8px) clamp(4px, 0.7vw, 6px);
+        font-size: clamp(10px, 0.9vw, 12px);
+        width: 100px;
     }
 
-    .mypagesec01 .point .stamp .levels > button span {
+    .mypagesec01 .point .stamp .levels>button span {
         margin-bottom: 4px;
     }
 

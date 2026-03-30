@@ -1547,6 +1547,7 @@
 .home-section04 .inner {
   max-width: 1320px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .home-section04 ul {
