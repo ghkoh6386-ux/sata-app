@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 .modal {
+    position: relative;
     z-index: 10000;
 }
 button {
