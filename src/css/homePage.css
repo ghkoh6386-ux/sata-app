@@ -68,8 +68,6 @@
 /* ------------------------------HomeSection01-------------------------------- */
 .section01 {
   padding-bottom: 50px;
-  position: relative;
-  z-index: 5000;
 }
 
 .section01 .text-area {
