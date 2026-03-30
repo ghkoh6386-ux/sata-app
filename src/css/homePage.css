@@ -45,12 +45,19 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: 0.3s;
 }
 
 .search .search-box:hover {
   background: #257047;
   transform: translateX(-50%) translateY(-4px);
   box-shadow: 0 14px 28px rgba(46, 139, 87, 0.35);
+  color: #f4fbf6;
+}
+
+.search .search-box:hover .searchText,
+.search .search-box:hover .search-logo {
+  color: #f4fbf6;
 }
 
 .search .search-box:active {
@@ -1700,6 +1707,7 @@
 
   .home-section04 .inner {
     padding: 0 14px;
+    overflow: hidden;
   }
 
   .usecard-item img {

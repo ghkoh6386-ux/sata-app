@@ -2,10 +2,14 @@
     position: relative;
 }
 
+.placepage .hero-area {
+    position: relative;
+}
+
 .placepage .find {
     position: absolute;
     left: 50%;
-    bottom: 360px;
+    bottom: 20%;
     transform: translateX(-50%);
     z-index: 10;
     display: flex;
@@ -64,6 +68,7 @@
 
 .text-area {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .text-area .hotspot {
@@ -232,9 +237,9 @@
     margin: 0 auto;
 }
 
-.placepage .sec-photo .photo-head {
+.placepage .sec-photo .inner>.text-area.photo-head {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -275,6 +280,24 @@
 
 #photo .photo-grid-item {
     flex: 0 0 auto;
+    cursor: pointer;
+}
+
+#photo .photo-grid-item .photo-slide {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#photo .photo-grid-item .photo-slide img {
+    transition: transform 0.25s ease;
+}
+
+#photo .photo-grid-item:hover .photo-slide {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+#photo .photo-grid-item:hover .photo-slide img {
+    transform: scale(1.04);
 }
 
 #photo .photo-swiper {
@@ -475,8 +498,9 @@
     box-sizing: border-box;
 }
 
-.photo-head {
-    margin-bottom: 2px;
+.photo-modal .photo-info-panel>.photo-head {
+    margin-bottom: 4px;
+    text-align: center;
 }
 
 .photo-badge {
@@ -492,7 +516,7 @@
     letter-spacing: 0.04em;
 }
 
-.photo-head h2 {
+.photo-modal .photo-head h2 {
     margin: 14px 0 6px;
     font-size: 28px;
     font-weight: 800;
@@ -501,7 +525,7 @@
     letter-spacing: -0.03em;
 }
 
-.photo-head p {
+.photo-modal .photo-head p {
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
@@ -631,6 +655,10 @@
     }
 
     .common-text .desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
         width: 100%;
         font-size: 16px;
         margin-bottom: 14px;
@@ -662,11 +690,11 @@
         height: 360px;
     }
 
-    .photo-head h2 {
+    .photo-modal .photo-head h2 {
         font-size: 24px;
     }
 
-    .photo-head p,
+    .photo-modal .photo-head p,
     .photo-info-card p {
         font-size: 15px;
     }
@@ -756,20 +784,20 @@
     }
 
     #photo .photo-swiper {
-        padding: 22px 2px 0;
+        padding: 22px 15px 0;
     }
 
     .photo-slide .photo-loca {
-        font-size: 18px;
+        font-size: clamp(15px, 1.3vw, 18px);
     }
 
     .photo-slide .photo-desc {
-        font-size: 13px;
+        font-size: clamp(11px, 1vw, 13px);
     }
 
     .photo-modal {
-        width: min(560px, calc(100vw - 24px));
-        max-height: calc(100vh - 24px);
+        width: min(85vw, calc(100vw - 24px));
+        max-height: calc(80vh - 24px);
         overflow-y: auto;
         border-radius: 24px;
     }
@@ -796,9 +824,7 @@
     .photo-info-grid {
         grid-template-columns: 1fr;
     }
-
 }
-
 
 /* ============================== 480px 이하 ============================== */
 @media (max-width: 480px) {
@@ -857,7 +883,12 @@
     }
 
     #photo .photo-swiper {
-        padding: 18px 2px 0;
+        padding: 18px 12px 0;
+    }
+
+    #photo .photo-swiper .swiper-slide {
+        padding-right: 8px;
+        box-sizing: border-box;
     }
 
     .photo-slide .photo-text {
@@ -865,16 +896,16 @@
     }
 
     .photo-slide .photo-loca {
-        font-size: 16px;
+        font-size: clamp(14px, 1.2vw, 16px);
     }
 
     .photo-slide .photo-desc {
-        font-size: 12px;
+        font-size: clamp(11px, 1vw, 12px);
     }
 
     .photo-modal {
-        width: calc(100vw - 16px);
-        max-height: calc(100vh - 16px);
+        width: calc(90vw - 16px);
+        max-height: calc(80vh - 16px);
         border-radius: 20px;
     }
 
@@ -887,11 +918,11 @@
         padding: 8px;
     }
 
-    .photo-head h2 {
+    .photo-modal .photo-head h2 {
         font-size: 20px;
     }
 
-    .photo-head p,
+    .photo-modal .photo-head p,
     .photo-info-card p {
         font-size: 14px;
     }

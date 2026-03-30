@@ -16,23 +16,23 @@
   flex-wrap: wrap;
 }
 
-.category-button button {
-  background: #fff !important;
-  color: #000 !important;
-  border: 1px solid #2e8b5688 !important;
-  border-radius: 30px !important;
+.communitypage-wrap .category-button button {
+  background: #fff;
+  color: #000;
+  border: 1px solid #2e8b5688;
+  border-radius: 30px;
   padding: 0 20px;
-  font-size: 22px !important;
+  font-size: 22px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-left: 0;
-  width: 120px !important;
+  width: 120px;
   height: 48px;
 }
 
-.category-button button.active {
-  background: #2E8B57 !important;
-  color: #fff !important;
+.communitypage-wrap .category-button button.active {
+  background: #2E8B57;
+  color: #fff;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -220,7 +220,7 @@
 }
 
 .modal-overlay h2 {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 
 .modal {
@@ -283,7 +283,7 @@
 }
 
 .community-swiper .swiper-pagination {
-  bottom: 0 !important;
+  bottom: 0;
 }
 
 .community-swiper .swiper-pagination-bullet {
@@ -291,7 +291,7 @@
   height: 10px;
   background: #d9d9d9;
   opacity: 1;
-  margin: 0 6px !important;
+  margin: 0 6px;
 }
 
 .community-swiper .swiper-pagination-bullet-active {
@@ -322,10 +322,10 @@
     margin-bottom: 24px;
   }
 
-  .category-button button {
-    width: 104px !important;
+  .communitypage-wrap .category-button button {
+    width: 104px;
     height: 44px;
-    font-size: 18px !important;
+    font-size: 18px;
     padding: 0 16px;
   }
 
@@ -418,11 +418,11 @@
     margin-top: 40px;
   }
 
-  .category-button button {
-    width: 83px !important;
+  .communitypage-wrap .category-button button {
+    width: 83px;
     height: 40px;
-    font-size: 16px !important;
-    border-radius: 24px !important;
+    font-size: 16px;
+    border-radius: 24px;
   }
 
   .community-slider-wrap {
@@ -445,30 +445,30 @@
   }
 
   .communitypage-wrap .title-area h3 {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .communitypage-wrap .title-area .badge {
-    font-size: 12px;
-    padding: 4px 12px;
+    font-size: 13px;
+    padding: 3px 12px;
     margin-left: 10px;
   }
 
   .communitypage-wrap .card > p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
   }
 
   .communitypage-wrap .info-area {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .communitypage-wrap .date {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .communitypage-wrap .tags span {
-    font-size: 11px;
+    font-size: 12px;
     padding: 6px 9px;
   }
 
@@ -507,10 +507,10 @@
     margin-bottom: 20px;
   }
 
-  .category-button button {
-    width: 70px !important;
+  .communitypage-wrap .category-button button {
+    width: 70px;
     height: 36px;
-    font-size: 14px !important;
+    font-size: 16px;
     padding: 0 10px;
   }
 
@@ -537,33 +537,33 @@
   }
 
   .communitypage-wrap .title-area .feet-icon {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
   }
 
   .communitypage-wrap .title-area h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .communitypage-wrap .title-area .badge {
-    font-size: 11px;
-    padding: 4px 10px;
+    font-size: 13px;
+    padding: 2.5px 10px;
     margin-left: 8px;
   }
 
   .communitypage-wrap .card > p {
     margin: 0 14px 10px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .communitypage-wrap .info-area {
     margin: 16px 14px 0 8px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .communitypage-wrap .date {
     margin: 0 14px 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .communitypage-wrap .date span {
@@ -577,7 +577,7 @@
   }
 
   .communitypage-wrap .tags span {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px 8px;
   }
 
@@ -589,12 +589,12 @@
   .communitypage-wrap button {
     width: 128px;
     height: 38px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .community-swiper .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    margin: 0 5px !important;
+    margin: 0 5px;
   }
 }

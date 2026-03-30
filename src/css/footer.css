@@ -73,7 +73,7 @@ footer .bot .bot-right {
 footer .bot .bot-right .sns {
     display: flex;
     justify-content: flex-end;
-    gap: 33px;
+    gap: 3px;
     margin-bottom: 23px;
 }
 
@@ -83,8 +83,8 @@ footer .bot .bot-right .sns li {
 
 footer .bot .bot-right .sns img {
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
@@ -110,11 +110,12 @@ footer .bot .bot-right .copy {
     }
 
     footer .top .footer-logo img {
-        width: 120px;
+        width: 80px;
     }
 
     footer .top .address {
         font-size: 14px;
+        line-height: 1.2;
     }
 
     footer .bot {
@@ -132,6 +133,7 @@ footer .bot .bot-right .copy {
     footer .bot .bot-left .info li,
     footer .bot .bot-left .policy li {
         font-size: 13px;
+        line-height: 1.2;
     }
 
     footer .bot .bot-left .policy {
@@ -149,13 +151,13 @@ footer .bot .bot-right .copy {
 
     footer .bot .bot-right .sns {
         margin-bottom: 0;
-        gap: 22px;
+        gap: 25px;
         order: 2;
     }
 
     footer .bot .bot-right .sns img {
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
     }
 
     footer .bot .bot-right .copy {
@@ -163,6 +165,7 @@ footer .bot .bot-right .copy {
         padding-top: 0;
         text-align: left;
         font-size: 12px;
+        line-height: 1.2;
     }
 }
 
@@ -179,11 +182,12 @@ footer .bot .bot-right .copy {
     }
 
     footer .top .footer-logo img {
-        width: 105px;
+        width: 80px;
     }
 
     footer .top .address {
         font-size: 13px;
+        line-height: 1.1;
     }
 
     footer .bot {
@@ -199,7 +203,7 @@ footer .bot .bot-right .copy {
     footer .bot .bot-left .info li,
     footer .bot .bot-left .policy li {
         font-size: 12px;
-        line-height: 1.5;
+        line-height: 1.1;
     }
 
     footer .bot .bot-left .policy {
@@ -211,16 +215,17 @@ footer .bot .bot-right .copy {
     }
 
     footer .bot .bot-right .sns {
-        gap: 16px;
+        gap: 20px;
     }
 
     footer .bot .bot-right .sns img {
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
     }
 
     footer .bot .bot-right .copy {
         font-size: 11px;
+        line-height: 1.1;
     }
 }
 
@@ -236,11 +241,12 @@ footer .bot .bot-right .copy {
     }
 
     footer .top .footer-logo img {
-        width: 92px;
+        width: 70px;
     }
 
     footer .top .address {
         font-size: 12px;
+        line-height: 1;
     }
 
     footer .bot {
@@ -252,10 +258,10 @@ footer .bot .bot-right .copy {
         gap: 6px;
         margin-bottom: 14px;
     }
-
     footer .bot .bot-left .info li,
     footer .bot .bot-left .policy li {
         font-size: 11px;
+        line-height: 1;
     }
 
     footer .bot .bot-left .policy {
@@ -273,15 +279,16 @@ footer .bot .bot-right .copy {
         order: 2;
         font-size: 10px;
         text-align: left;
+        line-height: 1;
     }
 
     footer .bot .bot-right .sns {
         order: 1;
-        gap: 14px;
+        gap: 20px;
     }
 
     footer .bot .bot-right .sns img {
-        width: 18px;
-        height: 18px;
+        width: 35px;
+        height: 35px;
     }
 }

@@ -50,16 +50,16 @@ export default function PlaceCardPhoto() {
           className="photo-area photo-swiper"
           breakpoints={{
             0: {
-              slidesPerView: 2,
-              spaceBetween: 1,
-              slidesOffsetBefore: 1,
-              slidesOffsetAfter: 1,
+              slidesPerView: 2.3,
+              spaceBetween: 12,
+              slidesOffsetBefore: 12,
+              slidesOffsetAfter: 12,
             },
             481: {
               slidesPerView: 3.15,
-              spaceBetween: 6,
-              slidesOffsetBefore: 8,
-              slidesOffsetAfter: 8,
+              spaceBetween: 15,
+              slidesOffsetBefore: 15,
+              slidesOffsetAfter: 15,
             },
             769: {
               slidesPerView: 4.15,

@@ -22,16 +22,17 @@ export default function PlacePage() {
 
   return (
     <div className="placepage">
-      <Hero
-        video="/video/PlacePage.mp4"
-        titleImg="/img/hotspot/h1.png"
-        subtitle="산타가 찾은 등산 후 들르는 핫플"
-      />
-
-      <div className="find">
-        <button onClick={() => scrollTo(section1)} className="cafe">카페</button>
-        <button onClick={() => scrollTo(section2)} className="rest">맛집</button>
-        <button onClick={() => scrollTo(section3)} className="photo">포토존</button>
+      <div className="hero-area">
+        <Hero
+          video="/video/PlacePage.mp4"
+          titleImg="/img/hotspot/h1.png"
+          subtitle="산타가 찾은 등산 후 들르는 핫플"
+        />
+        <div className="find">
+          <button onClick={() => scrollTo(section1)} className="cafe">카페</button>
+          <button onClick={() => scrollTo(section2)} className="rest">맛집</button>
+          <button onClick={() => scrollTo(section3)} className="photo">포토존</button>
+        </div>
       </div>
 
       <section className="sec-cafe" ref={section1}>
