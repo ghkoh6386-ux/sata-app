@@ -124,6 +124,8 @@
   gap: 20px;
   row-gap: 50px;
   margin-top: 80px;
+  position: relative;
+  z-index: 20;
 }
 
 .section01 .card {
