@@ -603,9 +603,6 @@
 
 /* ============================== 1024px 이하 ============================== */
 @media (max-width: 1024px) {
-    .placepage .find {
-        bottom: 260px;
-    }
 
     .placepage .find button {
         width: 88px;
