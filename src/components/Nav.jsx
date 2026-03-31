@@ -7,7 +7,10 @@ export default function Nav() {
     <nav>
       <ul>
         <li>
-          <NavLink to="/search">
+          <NavLink
+            to="/search"
+            className={({ isActive }) => (isActive ? 'active' : '')}
+          >
             <h3>산찾기</h3>
           </NavLink>
         </li>

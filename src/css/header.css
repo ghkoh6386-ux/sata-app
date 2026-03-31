@@ -24,6 +24,12 @@ header.scrolled button,
 header.white button {
     color: rgba(0, 0, 0, 0.75);
 }
+header.scrolled nav a.active h3 {
+    color: #2E8B57;
+}
+header.scrolled nav li.active h3 {
+  color: #2E8B57;
+}
 
 header.white {
     background: #fff;
@@ -58,7 +64,7 @@ nav>ul>li {
     cursor: pointer;
 }
 
-nav a.active h3 {
+header:not(.scrolled):not(.white) nav a.active h3 {
     position: relative;
     color: #2E8B57;
 }
@@ -74,7 +80,7 @@ nav a.active h3::after {
     background: #2E8B57;
 }
 
-li.active>h3 {
+header:not(.scrolled):not(.white) nav li.active h3 {
     position: relative;
     color: #2E8B57;
 }
