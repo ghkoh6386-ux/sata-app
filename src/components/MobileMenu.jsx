@@ -10,13 +10,13 @@ export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
   const [openAccordion, setOpenAccordion] = useState(null)
   const navigate = useNavigate()
   const handleMyPageClick = () => {
-  if (isLogin) {
-    navigate('/mypage')
-  } else {
-    navigate('/login')
+    if (isLogin) {
+      navigate('/mypage')
+    } else {
+      navigate('/login')
+    }
+    onClose()
   }
-  onClose()
-}
 
   useEffect(() => {
     if (isOpen) {
@@ -104,9 +104,9 @@ export default function MobileMenu({ isOpen, onClose, isLogin, onLogout }) {
 
             <div className={`mobile-sub-menu ${isCommunityOpen ? 'open' : ''}`}>
               <Link to="/community" onClick={onClose}>산타할사람</Link>
-              <Link to="/community/review" onClick={onClose}>산타일기</Link>
-              <Link to="/community/team" onClick={onClose}>산꿀팁</Link>
-              <Link to="/community/lab" onClick={onClose}>등산템연구소</Link>
+              <span className='fake-menu'>산타일기</span>
+              <span className='fake-menu'>산꿀팁</span>
+              <span className='fake-menu'>등산템연구소</span>
             </div>
           </div>
 
