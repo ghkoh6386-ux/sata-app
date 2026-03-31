@@ -46,6 +46,17 @@
   align-items: center;
   gap: 10px;
   transition: 0.3s;
+  width: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.search .searchText {
+  margin: 0;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .search .search-box:hover {
