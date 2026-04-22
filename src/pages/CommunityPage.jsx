@@ -3,7 +3,6 @@ import Hero from "../components/Hero"
 import HomeSection01Card from '../components/home/HomeSection01Card'
 import communityCard from '../data/communityCard'
 import '../css/communityPage.css'
-
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'

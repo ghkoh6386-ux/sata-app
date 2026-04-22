@@ -54,7 +54,7 @@ export default function Header() {
             {!isLogin ? (
               <>
                 <Link className="login" to="/login">로그인</Link>
-                <Link to="/join">회원가입</Link>
+                <Link to="#">회원가입</Link>
               </>
             ) : (
               <>
